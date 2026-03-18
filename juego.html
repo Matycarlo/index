@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Economía de Ortos</title>
+<link rel="stylesheet" href="style.css">
+<script src="javascript.js"></script>
+</head>
+
+<body>
+
+
+<div id="statsBar">
+
+<div class="stat">💰 <span id="ortos">0</span></div>
+<div class="stat">🦈 <span id="deuda">0</span></div>
+<div class="stat">🏦 <span id="deudaBanco">0</span></div>
+<div class="stat">⭐ <span id="nivelBanco">1</span></div>
+<div class="stat">🏠 <span id="casas">0</span></div>
+<div class="stat">🌍 <span id="eventoBar">Economía estable</span></div>
+
+</div>
+
+<h1>Economía de Ortos</h1>
+
+<div class="panel">
+
+<h3>Trabajo</h3>
+
+<button onclick="aplicarTrabajo()">Trabajo Legal</button>
+<button onclick="menuIlegal()">Trabajo Ilegal</button>
+
+<div id="menuIlegal"></div>
+
+<button id="trabajarBtn" style="display:none" onclick="trabajar()">Trabajar</button>
+
+</div>
+
+<div class="panel">
+
+<h3>Gota a Gota</h3>
+
+<input id="prestamo" placeholder="Cantidad">
+
+<button onclick="gota()">Pedir dinero</button>
+<button onclick="pagarGota()">Pagar deuda</button>
+
+</div>
+
+<div class="panel">
+
+<h3>Banco</h3>
+
+<button onclick="prestamoBanco()">Pedir préstamo</button>
+<button onclick="pagarBanco()">Pagar banco</button>
+
+</div>
+
+<div class="panel">
+
+<h3>Casas</h3>
+
+<div>Precio actual: <span id="precioCasa"></span></div>
+
+<button onclick="comprarCasa()">Comprar casa</button>
+<button onclick="venderCasa()">Vender casa</button>
+
+</div>
+
+<div class="panel">
+
+<h3>Empresa</h3>
+
+<button onclick="crearEmpresa()">Crear empresa</button>
+
+<div id="empresa"></div>
+<div id="interrogatorio"></div>
+
+</div>
+
+<div class="panel">
+
+<h3>📊 Mercado de acciones</h3>
+
+<div id="acciones"></div>
+
+</div>
+
+<div id="carcel">
+
+<h1>🚔 ESTÁS EN LA CÁRCEL</h1>
+
+Años restantes: <span id="anos">500</span>
+
+<br><br>
+
+<button onclick="esperar()">Esperar</button>
+<button onclick="corrupcion()">Corrupción (500)</button>
+<button onclick="escape()">gran escape</button>
+
+</div>
+
+
+
+</body>
+</html>
+
+
+
